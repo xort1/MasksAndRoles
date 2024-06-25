@@ -1,11 +1,11 @@
-const CompletedStep: React.FC = () => {
+// const CompletedStep: React.FC = () => {
 
-    return (
-        <>
+//     return (
+//         <>
             
-        </>
-    )
-}
+//         </>
+//     )
+// }
 
 const ActiveStep: React.FC = () => {
 
@@ -16,13 +16,13 @@ const ActiveStep: React.FC = () => {
     )
 }
 
-const UpcomingStep: React.FC = () => {
+// const UpcomingStep: React.FC = () => {
 
-    return (
-        <>
+//     return (
+//         <>
             
-        </>
-    )
-}
+//         </>
+//     )
+// }
 
 export default ActiveStep
