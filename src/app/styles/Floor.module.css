@@ -1,0 +1,40 @@
+.floor {
+    width: 100%;
+    height: 300px;
+}
+
+.header {
+    background: var(--bg-color-secondary);
+    width: 100%;
+    height: var(--button-heigh);
+}
+
+.header_button {
+    background: var(--accent-color);
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    display: flex;
+}
+
+.button_text {
+    position: relative;
+    margin: auto;
+}
+
+.button_image {
+    position: relative;
+    width: 14px;
+    height: 100%;
+    padding-right: 15px;
+    object-fit: contain;
+}
+
+.container {
+    background: var(--bg-color-secondary);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
