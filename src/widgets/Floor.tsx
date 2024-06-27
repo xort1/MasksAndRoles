@@ -2,6 +2,7 @@ import styles from '../app/styles/Floor.module.css';
 import steps from '../app/steps.json'
 
 import ActiveStep from "../entities/Step"
+import Section from '../shared/Section';
 
 import arrow_up from '../assets/svg/arrow_up.svg'
 
@@ -18,7 +19,7 @@ const Floor: React.FC = () => {
                 </div>
                 
                 <div className={styles.container}>
-                    <ActiveStep step={steps['situationStep']} />
+                    <ActiveStep step={steps['situationStep']} section='situationStep' />
                 </div>
             </section>
         </>

@@ -22,8 +22,7 @@ body {
     color: var(--text-color-main);
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
 }
 
 p {
@@ -56,4 +55,10 @@ a {
 
 a:visited, a:focus, a:hover {
     color: var(--accent-color);
+}
+
+textarea {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
 }
