@@ -2,7 +2,6 @@ import styles from '../app/styles/Floor.module.css';
 import steps from '../app/steps.json'
 
 import ActiveStep from "../entities/Step"
-import Section from '../shared/Section';
 
 import arrow_up from '../assets/svg/arrow_up.svg'
 
