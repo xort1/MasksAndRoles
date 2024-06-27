@@ -9,6 +9,7 @@
     color-scheme: dark;
     --bg-color: #1B1B1B;
     --bg-color-secondary: #313131;
+    --bg-color-accent: #292929;
     --accent-color: #B5CFF8;
     --text-color-main: #FFF;
     --text-color-secondary: #A8A8A8;
@@ -28,6 +29,7 @@ body {
 p {
     font-size: 15px;
     line-height: 22px;
+    font-weight: 400;
 }
 
 button {
@@ -37,4 +39,21 @@ button {
     font-weight: 500;
     font-size: 15px;
     cursor: pointer;
+}
+
+img {
+    width: 14px;
+    height: auto;
+    object-fit: contain;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+a:visited, a:focus, a:hover {
+    color: var(--accent-color);
 }

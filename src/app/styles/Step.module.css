@@ -1,0 +1,58 @@
+.title_container {
+    height: 50px;
+    border-top: 1px solid #656565;
+    border-bottom: 1px solid #656565;
+    display: flex;
+    padding: 0 20px;
+}
+
+.title {
+    margin: auto;
+    margin-left: 0;
+}
+
+.description_container {
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: var(--text-color-secondary);
+}
+
+.help {
+    background: var(--bg-color-accent);
+    height: auto;
+}
+
+.help_container {
+    height: 50px;
+    border-top: 1px solid #656565;
+    border-bottom: 1px solid #656565;
+    display: flex;
+    padding: 0 20px;
+    background: var(--bg-color-secondary);
+}
+
+.help_desc_container {
+    position: relative;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: var(--text-color-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.help_bg {
+    position: absolute;
+    width: 106px;
+    object-fit: cover;
+    right: 0;
+    margin-top: -15px;
+    scale: 1.4;
+}

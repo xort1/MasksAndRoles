@@ -1,4 +1,5 @@
 import styles from '../app/styles/Floor.module.css';
+import steps from '../app/steps.json'
 
 import ActiveStep from "../entities/Step"
 
@@ -17,7 +18,7 @@ const Floor: React.FC = () => {
                 </div>
                 
                 <div className={styles.container}>
-                    <ActiveStep />
+                    <ActiveStep step={steps['situationStep']} />
                 </div>
             </section>
         </>

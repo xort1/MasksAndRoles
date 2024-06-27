@@ -1,0 +1,11 @@
+{
+    "situationStep": {
+        "title": "Ситуация",
+        "description": "Подробно опишите ситуацию, которая Вас волнует",
+        "help": {
+            "description": "Посмотрите видеоурок, чтобы правильно описать ситуацию",
+            "video": "https://www.youtube.com/watch?v=gHqJJfMaZEY&ab_channel=Someone"
+        },
+        "section": ""
+    }
+}
