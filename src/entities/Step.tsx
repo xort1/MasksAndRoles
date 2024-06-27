@@ -54,7 +54,7 @@ const ActiveStep: React.FC<ActiveStepProps> = ({ step, section }) => {
                 <img src={arrowMainImg} className={styles.button_image} />
             </div>
 
-            <div style={isVisible ? { visibility: 'hidden', height: '0px' } : { visibility: 'visible', height: 'auto' }}>
+            <div style={isVisible ? { visibility: 'visible', height: 'auto' } : { visibility: 'hidden', height: '0px' }}>
                 { isActive ? <ActiveStepAdditions step={step} /> : <></> }
 
                 <Section step={section} isActive={isActive} />
