@@ -40,4 +40,7 @@
     padding-bottom: 15px;
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }

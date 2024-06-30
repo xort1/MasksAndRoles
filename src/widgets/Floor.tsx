@@ -19,6 +19,7 @@ const Floor: React.FC = () => {
                 
                 <div className={styles.container}>
                     <ActiveStep step={steps['situationStep']} section='situationStep' />
+                    <ActiveStep step={steps['rolesStep']} section='rolesStep' />
                 </div>
             </section>
         </>

@@ -6,7 +6,6 @@ const ElaborationPage: React.FC = () => {
         <>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
                 <Floor />
-                <Floor />
             </div>
         </>
     )

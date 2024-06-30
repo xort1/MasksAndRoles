@@ -5,7 +5,14 @@
         "help": {
             "description": "Посмотрите видеоурок, чтобы правильно описать ситуацию",
             "video": "https://www.youtube.com/watch?v=gHqJJfMaZEY&ab_channel=Someone"
-        },
-        "section": ""
+        }
+    },
+    "rolesStep": {
+        "title": "Роли",
+        "description": "Определите роли из ситуации, описанной на предыдущем шаге",
+        "help": {
+            "description": "Посмотрите видеоурок, чтобы правильно определить роли",
+            "video": "https://www.youtube.com/watch?v=gHqJJfMaZEY&ab_channel=Someone"
+        }
     }
 }

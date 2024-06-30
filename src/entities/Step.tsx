@@ -14,8 +14,7 @@ interface Step {
     help: {
         description: string;
         video: string;
-    };
-    section: string;
+    }
 }
 
 interface ActiveStepProps {
@@ -47,19 +46,29 @@ const ActiveStep: React.FC<ActiveStepProps> = ({ step, section }) => {
 
     return (
         <>
-            <div className={styles.title_container} onClick={toggleVisible}>
-                <p className={styles.title}>
-                    {step.title}
-                </p>
-                <img src={arrowMainImg} className={styles.button_image} />
-            </div>
+            <div>
+                { section != "situationStep" ?
+                    <div className={styles.title_container} onClick={toggleVisible}>
+                        <p className={styles.title}>
+                            {step.title}
+                        </p>
+                        <img src={arrowMainImg} className={styles.button_image} />
+                    </div>
+                    :
+                    <div className={styles.title_container}>
+                        <p className={styles.title}>
+                            {step.title}
+                        </p>
+                    </div>
+                }
 
-            <div style={isVisible ? { visibility: 'visible', height: 'auto' } : { visibility: 'hidden', height: '0px' }}>
-                { isActive ? <ActiveStepAdditions step={step} /> : <></> }
+                <div style={isVisible ? { visibility: 'visible', height: 'auto' } : { visibility: 'hidden', height: '0px' }}>
+                    { isActive ? <ActiveStepAdditions step={step} /> : <></> }
 
-                <Section step={section} isActive={isActive} />
+                    <Section step={section} isActive={isActive} />
 
-                <ButtonContinue toggleActive={toggleActive} isActive={isActive}/>
+                    <ButtonContinue toggleActive={toggleActive} isActive={isActive}/>
+                </div>
             </div>
         </>
     );

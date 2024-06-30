@@ -1,4 +1,4 @@
-.background {
+.background_situation_step {
     margin-top: 15px;
     min-height: 140px;
     background: var(--bg-color-accent);
@@ -8,7 +8,7 @@
     padding-bottom: 15px;
 }
 
-.input {
+.input_situation_step {
     width: 100%;
     color: var(--text-color-secondary);
     background-color: transparent;
@@ -18,4 +18,81 @@
     outline: none;
     min-height: 140px;
     font-style: normal;
+}
+
+.container_roles_step {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.flex_roles_step {
+    display: flex;
+    width: 100%;
+}
+
+.block_roles_step {
+    width: 45%;
+    min-height: 50px;
+    text-align: center;
+    color: var(--text-color-secondary);
+    display: flex;
+}
+
+.block_2_roles_step {
+    width: 10%;
+    min-height: 50px;
+}
+
+.role_roles_step {
+    width: 45%;
+    min-height: 50px;
+    text-align: center;
+    color: #FFF;
+    background: var(--bg-color-accent);
+    display: flex;
+    border-radius: var(--border-radius);
+}
+
+.role_2_roles_step {
+    width: 10%;
+    min-height: 50px;
+    display: flex;
+}
+
+.name_roles_step {
+    width: 100%;
+    height: auto;
+}
+
+.input_roles_step {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #FFF;
+}
+
+.close_img_roles_step {
+    width: 100%;
+    object-fit: contain;
+    margin: auto;
+    scale: 0.8;
+}
+
+.plus_btn_roles_step {
+    width: 100%;
+    height: 50px;
+    background-color: var(--bg-color-accent);
+    border-radius: var(--border-radius);
 }
