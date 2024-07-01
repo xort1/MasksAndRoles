@@ -22,7 +22,8 @@ body {
     color: var(--text-color-main);
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 p {
