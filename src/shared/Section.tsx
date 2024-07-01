@@ -67,13 +67,13 @@ const Section: React.FC<ActiveStepProps> = ({ step, isActive }) => {
 
                     <div className={styles.flex_roles_step}>
                         <div className={styles.role_roles_step}>
-                            <input className={styles.input_roles_step} placeholder='Жадный ч.' />
+                            <input readOnly={isActive ? false : true} className={styles.input_roles_step} placeholder='Жадный ч.' />
                         </div>
 
                         <div style={{ width: '5px' }} />
 
                         <div className={styles.role_roles_step}>
-                            <input className={styles.input_roles_step} placeholder='Щедрый ч.' />
+                            <input readOnly={isActive ? false : true} className={styles.input_roles_step} placeholder='Щедрый ч.' />
                         </div>
 
                         <div className={styles.role_2_roles_step}>
@@ -82,12 +82,16 @@ const Section: React.FC<ActiveStepProps> = ({ step, isActive }) => {
                     </div>
 
                     {rolesBlocks.map(block => (
-                        <RolesBlock key={block.id} onRemove={() => removeRolesBlock(block.id)} />
+                        <RolesBlock key={block.id} onRemove={() => removeRolesBlock(block.id)} isActive={isActive} />
                     ))}
-
-                    <button className={styles.plus_btn_roles_step} onClick={addRolesBlock}>
-                        <img src={plus} style={{ scale: '1.25' }} />
-                    </button>
+                    
+                    { isActive ?
+                        <button className={styles.plus_btn_roles_step} onClick={addRolesBlock}>
+                            <img src={plus} style={{ scale: '1.25' }} />
+                        </button>
+                    :
+                        <></>
+                    }
                 </div>
             </>
         )
@@ -96,25 +100,32 @@ const Section: React.FC<ActiveStepProps> = ({ step, isActive }) => {
 
 interface RolesBlockProps {
     onRemove: () => void;
+    isActive: boolean;
 }
 
-const RolesBlock: React.FC<RolesBlockProps> = ({ onRemove }) => {
+const RolesBlock: React.FC<RolesBlockProps> = ({ onRemove, isActive }) => {
     return (
         <>
             <div className={styles.flex_roles_step}>
                 <div className={styles.role_roles_step}>
-                    <input className={styles.input_roles_step} placeholder='Жадный ч.' />
+                    <input readOnly={isActive ? false : true} className={styles.input_roles_step} placeholder='Жадный ч.' />
                 </div>
 
                 <div style={{ width: '5px' }} />
 
                 <div className={styles.role_roles_step}>
-                    <input className={styles.input_roles_step} placeholder='Щедрый ч.' />
+                    <input readOnly={isActive ? false : true} className={styles.input_roles_step} placeholder='Щедрый ч.' />
                 </div>
 
-                <div className={styles.role_2_roles_step} onClick={onRemove}>
-                    <img className={styles.close_img_roles_step} src={close_active} />
-                </div>
+                { isActive ?
+                    <div className={styles.role_2_roles_step} onClick={onRemove}>
+                        <img className={styles.close_img_roles_step} src={close_active} />
+                    </div>
+                    :
+                    <div className={styles.role_2_roles_step}>
+                        <img className={styles.close_img_roles_step} src={close_unactive} />
+                    </div>
+                }
             </div>
         </>
     )
